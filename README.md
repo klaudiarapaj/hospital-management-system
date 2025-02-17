@@ -28,37 +28,37 @@ o	Add, edit or delete patient records with details such as:
 	Address
 	Contact
 	Medical Records
-2.	Doctor Management:
-o	Add, edit, or delete doctor details such as:
+3.	Doctor Management:
+Add, edit, or delete doctor details such as:
 	Full Name
 	Doctor ID
 	Specialty
 	Contact Information
 	Working hours
-3.	Appointment Scheduling:
+5.	Appointment Scheduling:
 o	Schedule appointments for patients with doctors with details such as:
 	Date and time
 	Patient ID
 	Doctor ID
 	Appointment Status (Scheduled/Completed/Cancelled).
 o	View, update, cancel or delete appointments.
-4.	Billing Management:
+7.	Billing Management:
 o	Generate bills for patients including:
 	Appointment fees.
 	Procedures/surgeries conducted fees.
 	Total payment.
-5.	Search and Filter functionalities:
+9.	Search and Filter functionalities:
 o	Search for patients by name, ID, or contact information.
 o	Search for doctors by name, ID, or specialty.
 o	Search appointments by ID, doctor, patient
-6.	Reports:
+12.	Reports:
 o	Generate reports like:
 	List of admitted patients.
 	Doctors’ appointments.
 	List of bills
-7.	Data Persistence:
+13.	Data Persistence:
 o	Store all hospital data in files to ensure data is preserved across sessions.
-8.	Graphical User Interface (GUI):
+14.	Graphical User Interface (GUI):
 o	Use Tkinter to create a user-friendly interface with widgets like buttons for managing patients, doctors and appointments. Forms and entry fields for entering or updating data. Tables or lists to visualize patient, doctor, appointment records and bills.
 
 Developed by Klaudia Rapaj for academical purposes
