@@ -1,64 +1,87 @@
 # hospital-management-system
 
-The hospital management system is an application aimed to assist the daily operations in a hospital. This system is solely for the staff of the hospital and no external users.
+The **Hospital Management System** is an application designed to assist with the daily operations of a hospital. This system is intended exclusively for hospital staff—no external users are supported.
 
-To log in to the system use the default login credentials:
-Email: admin@gmail.com
-Password: admin
+## Default Login Credentials
 
-Once logged in you will be greeted by a screen with 4 buttons: Patients, Doctors, Appointments and Bills. Each of these have several functionalities of their own, which incorporate with the related components.
+- **Email**: `admin@gmail.com`  
+- **Password**: `admin`
 
-Any modification to the system, is automatically saved after exiting the system. Breaking the execution will not save the progress made.
+## Overview
 
-The project is structured according to the MVC principles.
+Once logged in, the user is greeted by a screen with four primary options: **Patients**, **Doctors**, **Appointments**, and **Bills**. Each of these modules has multiple features that integrate with the relevant components.
 
-Model: Patient, Doctor, Appointment, Billing
-View: gui_patient, gui_doctor, gui_appointment, gui_billing
-Controller: Admin
+> ⚠️ All modifications are saved automatically when the system is closed properly. Forcefully terminating the application will result in loss of unsaved changes.
 
-The models are the main components of which the project is consisted of. They are responsible of defining the object structure. The views are what the user sees and interacts with. They are developed using the built-in GUI Tk. They communicate with the controller which is the Admin. Admin handles all the logic and receives commands from the view, which it processes and then calls the model, to eventually pass the result back to the view and display to the user. This structure is self-explanatory and easier to work with.
+## Architecture
 
-Features:
-1.	Patient Management:
-o	Add, edit or delete patient records with details such as:
- Full Name
-	Patient ID
-	Age
-	Gender
-	Address
-	Contact
-	Medical Records
-3.	Doctor Management:
-Add, edit, or delete doctor details such as:
-	Full Name
-	Doctor ID
-	Specialty
-	Contact Information
-	Working hours
-5.	Appointment Scheduling:
-o	Schedule appointments for patients with doctors with details such as:
-	Date and time
-	Patient ID
-	Doctor ID
-	Appointment Status (Scheduled/Completed/Cancelled).
-o	View, update, cancel or delete appointments.
-7.	Billing Management:
-o	Generate bills for patients including:
-	Appointment fees.
-	Procedures/surgeries conducted fees.
-	Total payment.
-9.	Search and Filter functionalities:
-o	Search for patients by name, ID, or contact information.
-o	Search for doctors by name, ID, or specialty.
-o	Search appointments by ID, doctor, patient
-12.	Reports:
-o	Generate reports like:
-	List of admitted patients.
-	Doctors’ appointments.
-	List of bills
-13.	Data Persistence:
-o	Store all hospital data in files to ensure data is preserved across sessions.
-14.	Graphical User Interface (GUI):
-o	Use Tkinter to create a user-friendly interface with widgets like buttons for managing patients, doctors and appointments. Forms and entry fields for entering or updating data. Tables or lists to visualize patient, doctor, appointment records and bills.
+The project follows the **MVC (Model-View-Controller)** architecture:
 
-Developed by Klaudia Rapaj for academical purposes
+- **Model**: `Patient`, `Doctor`, `Appointment`, `Billing`  
+- **View**: `gui_patient`, `gui_doctor`, `gui_appointment`, `gui_billing`  
+- **Controller**: `Admin`
+
+- **Models** define the structure and data of the application.
+- **Views** are the graphical interfaces (built with Tkinter) that the user interacts with.
+- The **Controller (Admin)** handles all business logic, mediating between models and views.
+
+This modular design simplifies development and maintenance.
+
+## Features
+
+### 1. Patient Management
+- Add, edit, or delete patient records with the following details:
+  - Full Name  
+  - Patient ID  
+  - Age  
+  - Gender  
+  - Address  
+  - Contact  
+  - Medical Records
+
+### 2. Doctor Management
+- Add, edit, or delete doctor details:
+  - Full Name  
+  - Doctor ID  
+  - Specialty  
+  - Contact Information  
+  - Working Hours
+
+### 3. Appointment Scheduling
+- Schedule appointments with details:
+  - Date and Time  
+  - Patient ID  
+  - Doctor ID  
+  - Appointment Status (`Scheduled`, `Completed`, `Cancelled`)  
+- View, update, cancel, or delete appointments.
+
+### 4. Billing Management
+- Generate bills including:
+  - Appointment Fees  
+  - Procedure/Surgery Fees  
+  - Total Payment
+
+### 5. Search and Filter
+- Search by:
+  - Patients: Name, ID, Contact  
+  - Doctors: Name, ID, Specialty  
+  - Appointments: ID, Doctor, Patient
+
+### 6. Reports
+- Generate reports such as:
+  - List of admitted patients  
+  - Doctors’ appointments  
+  - List of bills
+
+### 7. Data Persistence
+- All hospital data is stored in files, ensuring it is preserved across sessions.
+
+### 8. Graphical User Interface (GUI)
+- Built with **Tkinter** using:
+  - Buttons for navigating modules  
+  - Forms and entry fields for data input  
+  - Tables/lists for visualizing records
+
+---
+
+**Developed by Klaudia Rapaj for academic purposes.**
